@@ -1,52 +1,40 @@
-import { useEffect, useState } from 'react'
+import Container from '../components/container'
+import MoreStories from '../components/more-stories'
+import HeroPost from '../components/hero-post'
+import Intro from '../components/intro'
+import Layout from '../components/layout'
+import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
-import Post from '../components/post'
 
-const client = require('contentful').createClient({
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
-})
-
-function HomePage() {
-  async function fetchEntries() {
-    const entries = await client.getEntries()
-    if (entries.items) return entries.items
-    console.log(`Error getting Entries for ${contentType.name}.`)
-  }
-  const [ posts, setPosts ] = useState([])
-  
-  useEffect(() =>{
-    async function getPosts() {
-      const allPosts = await fetchEntries()
-      setPosts([...allPosts])
-    }
-    getPosts()
-  }, [])
-
+export default function Index({ allPosts }) {
+  const heroPost = allPosts[0]
+  const morePosts = allPosts.slice(1)
   return (
     <>
-      <Head>
-        <title>cat vs. code</title>
-        <link
-          rel="stylesheet"
-          href="https://css.zeit.sh/v1.css"
-          type="text/css"
-        />
-      </Head>
-
-      {posts.length > 0 
-        ? posts.map(p => (
-          <Post
-          alt={p.fields.alt}
-          date={p.fields.date}
-          key={p.fields.title}
-          image={p.fields.image}
-          title={p.fields.title}
-          url={p.fields.url}
-         />
-        )) : null}
-        </>
+      <Layout>
+        <Head>
+          <title>cat vs code</title>
+        </Head>
+        <Container>
+          <Intro />
+          {heroPost && (
+            <HeroPost
+              title={heroPost.title}
+              coverImage={heroPost.coverImage}
+              date={heroPost.date}
+              slug={heroPost.slug}
+            />
+          )}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        </Container>
+      </Layout>
+    </>
   )
 }
 
-export default HomePage
+export async function getStaticProps() {
+  const allPosts = await getAllPostsForHome()
+  return {
+    props: { allPosts },
+  }
+}

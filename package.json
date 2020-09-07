@@ -5,13 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "setup": "node ./contentful/setup.js $NEXT_PUBLIC_CONTENTFUL_SPACE_ID $NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.1",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "classnames": "^2.2.6",
     "contentful": "^7.14.6",
+    "contentful-import": "^7.9.6",
+    "date-fns": "^2.16.1",
     "dotenv": "^8.2.0",
     "next": "9.5.3",
+    "postcss": "^7.0.32",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.8.4"
   }
 }
