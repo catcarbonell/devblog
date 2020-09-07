@@ -1,13 +1,16 @@
-function Post({ alt, date, image, title, url }) {
+function Post({ alt, date, image, title, postbody }) {
     return (
       <div className="container">
-        <a href={url}>
-          <img alt={alt} src={image} />
-        </a>
+       
+        <img alt={alt} src={image} />
+
         <div className="text">
           <h2>{title}</h2>
           <h4>{date}</h4>
         </div>
+
+        <div>{postbody}</div>
+        
         <style jsx>{`
           .container {
             cursor: pointer;

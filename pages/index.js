@@ -10,9 +10,9 @@ const client = require('contentful').createClient({
 function HomePage() {
   async function fetchEntries() {
     const entries = await client.getEntries()
-    entries.items ? entries.items : console.log(`Error getting Entries for ${contentType.name}.`)
+    if (entries.items) return entries.items
+    console.log(`Error getting Entries for ${contentType.name}.`)
   }
-
   const [ posts, setPosts ] = useState([])
   
   useEffect(() =>{
@@ -42,7 +42,8 @@ function HomePage() {
           key={p.fields.title}
           image={p.fields.image}
           title={p.fields.title}
-          url={p.fields.url} />
+          url={p.fields.url}
+         />
         )) : null}
         </>
   )

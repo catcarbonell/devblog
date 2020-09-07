@@ -11,6 +11,11 @@
 # next.js
 /.next/
 /out/
+# next.js build output
+.next
+# dotenv environment variables file (build for Zeit Now)
+.env
+.env.build
 
 # production
 /build
@@ -29,6 +34,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 # vercel
 .vercel
