@@ -17,9 +17,6 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro />
-          <h2 className="mb-8 text-4xl font-bold tracking-tighter leading-tight">
-            Latest Entry
-          </h2>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
@@ -28,9 +25,9 @@ export default function Index({ allPosts }) {
               slug={heroPost.slug}
             />
           )}
-
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        
+          <div className="flex flex-col place-items-center">
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          </div>
         </Container>
       </Layout>
     </>

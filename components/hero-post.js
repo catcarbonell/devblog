@@ -9,22 +9,19 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <div>
-     
+    <div className="w-3/4 mt-10 mb-20 rounded-lg shadow-lg">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
-     
-        <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
-            <div>
-                <h3 className="mb-2 text-4xl font-bold lg:text-6xl leading-tight">
+            <div className="px-10 pt-6 pb-8">
+                <h3 className="text-3xl font-bold lg:text-6xl leading-tight">
                     <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                        <a className="hover:underline">{title}</a>
-                    </Link>
-                </h3>
-                <div className="mb-4 md:mb-0 text-lg">
-                    <DateComponent dateString={date} />
-                </div>
+                  <a className="hover:underline">{title}</a>
+              </Link>
+            </h3>
+            <div className="text-lg">
+                <DateComponent dateString={date} />
             </div>
         </div>
     </div>
+
   )
 }

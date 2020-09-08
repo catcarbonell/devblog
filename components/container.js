@@ -1,3 +1,3 @@
 export default function Container({ children }) {
-    return <div className="container mx-auto px-5">{children}</div>
+    return <div className="w-5/6 mx-auto flex flex-col place-items-center px-5">{children}</div>
   }

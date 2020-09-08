@@ -41,10 +41,14 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.content} />
             </article>
-           
+
+            
+          <div className="mb-10"><h3 className="text-2xl font-bold">More posts</h3></div>
+          <div className="flex flex-row w-5/6 mb-40">
             {morePosts && morePosts.length > 0 && (
               <MoreStories posts={morePosts} />
             )}
+          </div>
           </>
         )}
       </Container>
