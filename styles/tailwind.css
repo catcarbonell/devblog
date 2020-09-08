@@ -1,9 +1,6 @@
 
-/* purgecss start ignore */
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
-/* purgecss end ignore */
+@tailwind base;
+@tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Space+Mono:wght@400;700&display=swap');
 
 html,
@@ -41,4 +38,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@import "tailwindcss/utilities";
+@tailwind utilities;
