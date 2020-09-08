@@ -6,6 +6,7 @@ export default function MoreStories({ posts }) {
       <h2 className="mb-8 text-4xl font-bold tracking-tighter leading-tight">
         Past Entries
       </h2>
+      
       <div className="w-full flex flex-col md:flex-row content-evenly">
         {posts.map((post) => (
           <PostPreview

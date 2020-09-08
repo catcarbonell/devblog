@@ -20,7 +20,9 @@ export default function PostPreview({
             <a className="hover:underline">{title}</a>
           </Link>
         </h3>
-        <DateComponent dateString={date} />
+        <div>
+          <DateComponent dateString={date} />
+        </div>
       </div>
      
     </div>

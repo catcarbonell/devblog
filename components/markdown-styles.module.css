@@ -1,18 +1,17 @@
 .markdown {
-    @apply text-lg leading-relaxed;
+    font-size: 1.3rem;
   }
   
   .markdown p,
   .markdown ul,
   .markdown ol,
   .markdown blockquote {
-    @apply my-6;
+    margin: 20% 0;
   }
   
   .markdown h2 {
-    @apply text-3xl mt-12 mb-4 leading-snug;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 2rem 0 1.3rem 0;
   }
   
-  .markdown h3 {
-    @apply text-2xl mt-8 mb-4 leading-snug;
-  }

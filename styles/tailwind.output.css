@@ -5073,6 +5073,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.5rem !important;
 }
 
+.rounded-xl {
+  border-radius: 2rem !important;
+}
+
 .rounded-full {
   border-radius: 9999px !important;
 }
@@ -5177,6 +5181,26 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 0.5rem !important;
 }
 
+.rounded-t-xl {
+  border-top-left-radius: 2rem !important;
+  border-top-right-radius: 2rem !important;
+}
+
+.rounded-r-xl {
+  border-top-right-radius: 2rem !important;
+  border-bottom-right-radius: 2rem !important;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 2rem !important;
+  border-bottom-left-radius: 2rem !important;
+}
+
+.rounded-l-xl {
+  border-top-left-radius: 2rem !important;
+  border-bottom-left-radius: 2rem !important;
+}
+
 .rounded-t-full {
   border-top-left-radius: 9999px !important;
   border-top-right-radius: 9999px !important;
@@ -5275,6 +5299,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .rounded-bl-lg {
   border-bottom-left-radius: 0.5rem !important;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: 2rem !important;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: 2rem !important;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: 2rem !important;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: 2rem !important;
 }
 
 .rounded-tl-full {
@@ -18793,6 +18833,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem !important;
   }
 
+  .sm\:rounded-xl {
+    border-radius: 2rem !important;
+  }
+
   .sm\:rounded-full {
     border-radius: 9999px !important;
   }
@@ -18897,6 +18941,26 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0.5rem !important;
   }
 
+  .sm\:rounded-t-xl {
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+  }
+
+  .sm\:rounded-r-xl {
+    border-top-right-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
+  .sm\:rounded-l-xl {
+    border-top-left-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
   .sm\:rounded-t-full {
     border-top-left-radius: 9999px !important;
     border-top-right-radius: 9999px !important;
@@ -18995,6 +19059,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .sm\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem !important;
+  }
+
+  .sm\:rounded-tl-xl {
+    border-top-left-radius: 2rem !important;
+  }
+
+  .sm\:rounded-tr-xl {
+    border-top-right-radius: 2rem !important;
+  }
+
+  .sm\:rounded-br-xl {
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .sm\:rounded-bl-xl {
+    border-bottom-left-radius: 2rem !important;
   }
 
   .sm\:rounded-tl-full {
@@ -32448,6 +32528,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem !important;
   }
 
+  .md\:rounded-xl {
+    border-radius: 2rem !important;
+  }
+
   .md\:rounded-full {
     border-radius: 9999px !important;
   }
@@ -32552,6 +32636,26 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0.5rem !important;
   }
 
+  .md\:rounded-t-xl {
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+  }
+
+  .md\:rounded-r-xl {
+    border-top-right-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
+  .md\:rounded-l-xl {
+    border-top-left-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
   .md\:rounded-t-full {
     border-top-left-radius: 9999px !important;
     border-top-right-radius: 9999px !important;
@@ -32650,6 +32754,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .md\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem !important;
+  }
+
+  .md\:rounded-tl-xl {
+    border-top-left-radius: 2rem !important;
+  }
+
+  .md\:rounded-tr-xl {
+    border-top-right-radius: 2rem !important;
+  }
+
+  .md\:rounded-br-xl {
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .md\:rounded-bl-xl {
+    border-bottom-left-radius: 2rem !important;
   }
 
   .md\:rounded-tl-full {
@@ -46103,6 +46223,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem !important;
   }
 
+  .lg\:rounded-xl {
+    border-radius: 2rem !important;
+  }
+
   .lg\:rounded-full {
     border-radius: 9999px !important;
   }
@@ -46207,6 +46331,26 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0.5rem !important;
   }
 
+  .lg\:rounded-t-xl {
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+  }
+
+  .lg\:rounded-r-xl {
+    border-top-right-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .lg\:rounded-b-xl {
+    border-bottom-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
+  .lg\:rounded-l-xl {
+    border-top-left-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
   .lg\:rounded-t-full {
     border-top-left-radius: 9999px !important;
     border-top-right-radius: 9999px !important;
@@ -46305,6 +46449,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem !important;
+  }
+
+  .lg\:rounded-tl-xl {
+    border-top-left-radius: 2rem !important;
+  }
+
+  .lg\:rounded-tr-xl {
+    border-top-right-radius: 2rem !important;
+  }
+
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .lg\:rounded-bl-xl {
+    border-bottom-left-radius: 2rem !important;
   }
 
   .lg\:rounded-tl-full {
@@ -59758,6 +59918,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem !important;
   }
 
+  .xl\:rounded-xl {
+    border-radius: 2rem !important;
+  }
+
   .xl\:rounded-full {
     border-radius: 9999px !important;
   }
@@ -59862,6 +60026,26 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0.5rem !important;
   }
 
+  .xl\:rounded-t-xl {
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+  }
+
+  .xl\:rounded-r-xl {
+    border-top-right-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .xl\:rounded-b-xl {
+    border-bottom-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
+  .xl\:rounded-l-xl {
+    border-top-left-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+  }
+
   .xl\:rounded-t-full {
     border-top-left-radius: 9999px !important;
     border-top-right-radius: 9999px !important;
@@ -59960,6 +60144,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .xl\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem !important;
+  }
+
+  .xl\:rounded-tl-xl {
+    border-top-left-radius: 2rem !important;
+  }
+
+  .xl\:rounded-tr-xl {
+    border-top-right-radius: 2rem !important;
+  }
+
+  .xl\:rounded-br-xl {
+    border-bottom-right-radius: 2rem !important;
+  }
+
+  .xl\:rounded-bl-xl {
+    border-bottom-left-radius: 2rem !important;
   }
 
   .xl\:rounded-tl-full {

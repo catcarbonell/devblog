@@ -5,7 +5,7 @@ export default function CoverImage({ title, url, slug }) {
     <img
       src={url}
       alt={`Cover Image for ${title}`}
-      className="h-64 w-full object-cover"
+      className="h-xxs w-full object-cover rounded-xl"
     />
   )
   return (
