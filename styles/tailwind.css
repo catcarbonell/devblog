@@ -1,3 +1,9 @@
+
+/* purgecss start ignore */
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+/* purgecss end ignore */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Space+Mono:wght@400;700&display=swap');
 
 html,
@@ -6,7 +12,7 @@ body {
   margin: 0;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 * {
@@ -14,11 +20,14 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color:#b967ff ;
+  /* vi vile violet */
   text-decoration: none;
 }
 
 a:hover {
+  color: #ff71ce; 
+  /* hella hot pink */
   text-decoration: underline;
 }
 
@@ -30,3 +39,6 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Mono', 'Courier New', Courier, monospace;
 }
+
+
+@import "tailwindcss/utilities";
