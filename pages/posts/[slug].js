@@ -4,7 +4,7 @@ import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
+import MoreStoriesSlug from '../../components/more-stories-slug'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
@@ -43,10 +43,13 @@ export default function Post({ post, morePosts, preview }) {
             </article>
 
             
-          <div className="mb-10"><h3 className="text-2xl font-bold">More posts</h3></div>
-          <div className="flex flex-row w-5/6 mb-40">
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold">More posts</h3>
+          </div>
+          
+          <div className="w-full mb-40 flex flex-col md:flex-row md:flex-wrap justify-items-center">
             {morePosts && morePosts.length > 0 && (
-              <MoreStories posts={morePosts} />
+              <MoreStoriesSlug posts={morePosts} />
             )}
           </div>
           </>

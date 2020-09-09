@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-export default function CoverImage({ title, url, slug }) {
+export default function ThumbnailCoverImg({ title, url, slug }) {
   const image = (
     <img
       src={url}
       alt={`Cover Image for ${title}`}
-      className="rounded-lg h-xs w-full object-cover"
+      className="rounded-t-lg h-xs w-full object-cover"
     />
   )
   return (

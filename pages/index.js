@@ -25,7 +25,7 @@ export default function Index({ allPosts }) {
               slug={heroPost.slug}
             />
           )}
-          <div className="flex flex-col place-items-center">
+          <div className="flex flex-col place-items-center mb-40">
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </div>
         </Container>

@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import DateComponent from '../components/date'
+import DateComponent from './date'
 import ThumbnailCoverImg from './th-cover-image'
 
-export default function PostPreview({
+export default function PostPreviewSlug({
   title,
   coverImage,
   date,
   slug,
 }) {
   return (
-    <div className="md:w-3/4 h-xs mx-2 mb-40">
+    <div className="md:w-xs md:h-auto mx-2 mb-40">
       <div>
         <ThumbnailCoverImg title={title} slug={slug} url={coverImage.url} />
       </div>
