@@ -5,11 +5,11 @@ export default function CoverImage({ title, url, slug }) {
     <img
       src={url}
       alt={`Cover Image for ${title}`}
-      className="rounded-lg h-xs w-full object-cover"
+      className="rounded-xl h-xs w-full object-cover shadow-lg"
     />
   )
   return (
-    <div className="shadow-lg">
+    <div>
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>
