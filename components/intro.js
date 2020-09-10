@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <section className="w-full box-border 
+    <section className="w-full md:w-5/6 box-border 
                         flex flex-col md:flex-row items-center md:justify-between 
                         my-16 md:mt-16 md:mb-12">
 

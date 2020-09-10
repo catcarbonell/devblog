@@ -48,7 +48,7 @@ export default function Post({ post, morePosts, preview }) {
             <h3 className="text-2xl font-bold uppercase tracking-hella">More posts</h3>
           </div>
           
-          <div className="w-full mb-40 flex flex-col md:flex-row md:flex-wrap justify-items-center">
+          <div className="w-5/6 mb-40 flex flex-col md:flex-row md:flex-wrap justify-items-center">
             {morePosts && morePosts.length > 0 && (
               <MoreStoriesSlug posts={morePosts} />
             )}
