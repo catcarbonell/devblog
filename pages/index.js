@@ -7,8 +7,18 @@ import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {
+  const [hasMounted, setHasMounted] = React.useState(false);
+  
+  React.useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  if (!hasMounted) {
+    return null;
+  }
+
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+  
   return (
     <>
       <Layout>

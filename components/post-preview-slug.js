@@ -9,7 +9,7 @@ export default function PostPreviewSlug({
   slug,
 }) {
   return (
-    <div className="md:w-xs md:h-auto mx-2 mb-36">
+    <div className="md:w-xs md:h-auto mx-2 mb-56">
       <div>
         <ThumbnailCoverImg title={title} slug={slug} url={coverImage.url} />
       </div>
