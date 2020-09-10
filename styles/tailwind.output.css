@@ -586,6 +586,15 @@ video {
   height: auto;
 }
 
+pre, code, kbd, samp {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding: 2rem 1.5rem;
+  color: #b967ff !important;
+  white-space: break-spaces;
+}
+
 .container {
   width: 100%;
   margin-right: auto;

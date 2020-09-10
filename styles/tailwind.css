@@ -1,5 +1,15 @@
 
 @tailwind base;
+pre, code, kbd, samp {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding: 2rem 1.5rem;
+  color: #b967ff !important;
+  white-space: break-spaces;
+}
+
+
 @tailwind components;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Space+Mono:wght@400;700&display=swap');
 
